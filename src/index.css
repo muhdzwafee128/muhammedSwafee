@@ -1,0 +1,115 @@
+/* ── Tailwind directives ─────────────────────────────────── */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base styles ─────────────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  /* Respect prefers-reduced-motion globally */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    @apply font-body antialiased;
+    @apply bg-light-bg text-light-textPrimary;
+    @apply dark:bg-dark-bg dark:text-dark-textPrimary;
+    overflow-x: hidden;
+  }
+
+  /* Selection colour */
+  ::selection {
+    @apply bg-zinc-900 text-white dark:bg-zinc-100 dark:text-black;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-zinc-300 dark:bg-zinc-800 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-zinc-400 dark:bg-zinc-700;
+  }
+}
+
+/* ── Component utilities ─────────────────────────────────── */
+@layer components {
+  /* Controlled maximum content width */
+  .section-container {
+    @apply mx-auto max-w-5xl px-5 sm:px-8;
+  }
+
+  /* Bold, oversized Mazin-inspired section title */
+  .section-title {
+    @apply font-display text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-light-textPrimary dark:text-dark-textPrimary;
+  }
+
+  /* Minimal section subtitle / eyebrow */
+  .section-subtitle {
+    @apply font-body text-xs sm:text-sm font-medium uppercase tracking-wider text-light-muted dark:text-dark-muted mb-2 block;
+  }
+
+  /* Focus ring utility */
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2
+           focus-visible:ring-zinc-900 focus-visible:ring-offset-2
+           focus-visible:ring-offset-light-bg
+           dark:focus-visible:ring-zinc-100
+           dark:focus-visible:ring-offset-dark-bg;
+  }
+
+  /* Translucent glass-style card */
+  .glass-card {
+    @apply rounded-2xl border
+           bg-white/80 border-light-border shadow-sm
+           dark:bg-dark-card/70 dark:border-dark-border
+           backdrop-blur-md transition-all duration-300;
+  }
+
+  /* Primary button: solid high-contrast monochrome */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm sm:text-base font-semibold
+           bg-zinc-900 text-white hover:bg-zinc-800
+           dark:bg-white dark:text-zinc-950 dark:hover:bg-zinc-200
+           transition-all duration-200 focus-ring;
+  }
+
+  /* Secondary button: subtle bordered outline */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm sm:text-base font-medium
+           border border-light-border bg-white/60 text-light-textPrimary hover:bg-light-secondary hover:border-zinc-400
+           dark:border-dark-border dark:bg-dark-card/50 dark:text-dark-textPrimary dark:hover:bg-dark-surface dark:hover:border-zinc-600
+           transition-all duration-200 focus-ring;
+  }
+}
+
+/* ── Custom Utilities ────────────────────────────────────── */
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
