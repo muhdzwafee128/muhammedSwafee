@@ -6,10 +6,10 @@ const portfolio = {
   /* ── Personal & Branding ────────────────────────────────── */
   brandName: 'Swafee.',
   name: 'Muhammed Swafee A V',
-  role: 'Frontend Web Developer',
+  role: 'MERN Stack Developer',
   title: 'Frontend Web Developer',
   supportingRole:
-    'MERN Stack Developer / Building web experiences and exploring product development.',
+    'B.Tech IT · College of Engineering Thalassery · 2027',
   location: 'Kozhikode, Kerala, India',
   email: 'mohdzwafee128@gmail.com',
 
@@ -20,13 +20,12 @@ const portfolio = {
 
   /* ── Hero ───────────────────────────────────────────────── */
   heroDescription:
-    'Building thoughtful digital experiences through frontend development, creative problem-solving and technology.',
-
+  'Full-stack developer building role-based web apps with React, Node.js and MongoDB, from a deployed campus platform to an ML-based security tool.',
   /* ── About (Single Concise Paragraph) ───────────────────── */
   about:
-    "I'm Muhammed Swafee A V, a frontend web developer interested in building clean, responsive and meaningful digital experiences. I work with modern web technologies and enjoy turning ideas into practical products. I've built and deployed the E-Campus Approval System and am currently building NetrIQ, an AI-adaptive network security product. Alongside development, I contribute to technology communities through leadership, mentoring and event organization.",
+  "I'm a B.Tech Information Technology student (2027) at College of Engineering Thalassery who builds full-stack web applications with the MERN stack. I built and deployed the E-Campus Approval System, a role-based approval platform with six user roles, real-time tracking and QR-verified PDFs, and I'm building NetrIQ, a machine-learning network intrusion detection system. As IEDC Community Lead, I've coordinated the HACKATLY 3.0 and 4.0 national hackathons.",
 
-  /* ── What I Do / Focus Areas (Mazin KP inspired) ────────── */
+  /* ── What I Do / Focus Areas  ────────── */
   focusAreas: [
     {
       id: '01',
@@ -67,7 +66,7 @@ const portfolio = {
       shortDescription:
         'A full-stack campus approval management platform that digitizes hierarchical permission requests and approval workflows for educational institutions.',
       fullDescription:
-        'A full-stack campus approval management platform that digitizes hierarchical permission requests and approval workflows for educational institutions. Provides role-based access across students, tutors, HODs, principals, and administrative office staff with real-time status tracking, automated PDF generation, and QR verification.',
+        'Replaces paper-based permission and leave requests with one digital workflow. A full-stack campus approval management platform that digitizes hierarchical permission requests and approval workflows for educational institutions. Provides role-based access across students, tutors, HODs, principals, and administrative office staff with real-time status tracking, automated PDF generation, and QR verification.',
       image: '', // Screenshot path can be configured here in public/projects/ when available
       technologies: [
         'MERN Stack',
@@ -98,7 +97,7 @@ const portfolio = {
       shortDescription:
         'An AI-adaptive network security product designed to detect suspicious network activity and identify potential intrusions using machine learning.',
       fullDescription:
-        'An AI-adaptive network security product designed to detect suspicious network activity and identify potential intrusions in real-time. Leverages machine learning ensembles trained on standard benchmark cybersecurity datasets to analyze traffic telemetry and flag anomalous behaviors.',
+        'An AI-adaptive network security product that detects suspicious network activity using machine learning. Ensembles trained on benchmark cybersecurity datasets classify traffic features and flag anomalous behavior.',
       image: '', // Screenshot path can be configured here in public/projects/ when available
       technologies: [
         'Cybersecurity',
@@ -113,7 +112,7 @@ const portfolio = {
         'Two-layer architecture combining signature detection and machine learning anomaly analysis.',
         'Ensemble classifiers integrating Random Forest, XGBoost, and LightGBM models.',
         'Trained and evaluated on CIC-IDS2017, NSL-KDD, and UNSW-NB15 benchmark datasets.',
-        'High-throughput FastAPI service layer for streaming packet telemetry evaluation.',
+        'FastAPI service layer that serves model predictions on network traffic features.',
       ],
       githubUrl: 'https://github.com/Abhilash-C-K/NETRIQ-LEARN',
       demoUrl: '', // Add live demo URL here when available
