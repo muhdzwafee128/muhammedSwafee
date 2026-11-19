@@ -126,12 +126,12 @@ const portfolio = {
     {
       role: 'Community Lead',
       organization: 'IEDC CETLY / College of Engineering Thalassery',
-      orgUrl: '', // Configurable organization link
+      orgUrl: 'https://iedc-tly.github.io/IEDC-CETLY/', // Configurable organization link
       workMode: 'On-site / Hybrid',
-      period: 'Aug 2024 – Present',
+      period: 'Aug 2024 – July 2026',
       responsibilities: [
-        'Supporting and growing the student technology community through hands-on project initiatives.',
-        'Organized HACKATLY 3.0 (48-hour, Feb 2025) and HACKATLY 4.0 (March 2026, Agnitus 2026) national hackathons.',
+        'Organized HACKATLY 3.0, a 48-hour national hackathon (Feb 2025), with around 100 teams of 2–4 members across online and offline phases.',
+        'Coordinated HACKATLY 4.0 at Agnitus 2026 (March 2026), a hybrid online and offline national hackathon with around 100 teams.',
         'Encouraging student participation in innovation, startup development, and open-source activities.',
         'Connecting students with technical opportunities, mentorship, and cross-chapter collaborations.',
       ],
@@ -188,14 +188,7 @@ const portfolio = {
       description:
         'Participated in the global hackathon solving real-world challenges using NASA open-source data.',
     },
-    {
-      title: 'Community Leadership',
-      role: 'Community Lead',
-      organization: 'IEDC CETLY',
-      year: '2024 – Present',
-      description:
-        'Leading community development, technical workshops, hackathons, and fostering innovation among student developers.',
-    },
+    
   ],
 
   /* ── Contact Section ────────────────────────────────────── */
