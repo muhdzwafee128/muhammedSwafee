@@ -118,7 +118,7 @@ export default function ProjectModal({ project, onClose }) {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-fill"
                 />
               </div>
             ) : (

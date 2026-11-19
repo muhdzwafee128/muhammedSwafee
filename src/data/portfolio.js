@@ -7,7 +7,7 @@ const portfolio = {
   brandName: 'Swafee.',
   name: 'Muhammed Swafee A V',
   role: 'MERN Stack Developer',
-  title: 'Frontend Web Developer',
+  title: 'MERN Stack Developer',
   supportingRole:
     'B.Tech IT · College of Engineering Thalassery · 2027',
   location: 'Kozhikode, Kerala, India',
@@ -67,7 +67,7 @@ const portfolio = {
         'A full-stack campus approval management platform that digitizes hierarchical permission requests and approval workflows for educational institutions.',
       fullDescription:
         'Replaces paper-based permission and leave requests with one digital workflow. A full-stack campus approval management platform that digitizes hierarchical permission requests and approval workflows for educational institutions. Provides role-based access across students, tutors, HODs, principals, and administrative office staff with real-time status tracking, automated PDF generation, and QR verification.',
-      image: '', // Screenshot path can be configured here in public/projects/ when available
+      image: "./projects/e-campus.png", // Screenshot path can be configured here in public/projects/ when available
       technologies: [
         'MERN Stack',
         'React.js',
@@ -86,7 +86,7 @@ const portfolio = {
         'Automated PDF document generation with embedded QR-code verification for institutional audit.',
       ],
       githubUrl: 'https://github.com/muhdzwafee128/e-campus-approval',
-      demoUrl: '', // Add live demo URL here when available
+      demoUrl: 'https://e-campus-approval.vercel.app/', // Add live demo URL here when available
       additionalDetails:
         'Deployed and actively utilized across campus for student permission and leave management.',
     },
@@ -98,7 +98,7 @@ const portfolio = {
         'An AI-adaptive network security product designed to detect suspicious network activity and identify potential intrusions using machine learning.',
       fullDescription:
         'An AI-adaptive network security product that detects suspicious network activity using machine learning. Ensembles trained on benchmark cybersecurity datasets classify traffic features and flag anomalous behavior.',
-      image: '', // Screenshot path can be configured here in public/projects/ when available
+      image: './projects/netriq.png', // Screenshot path can be configured here in public/projects/ when available
       technologies: [
         'Cybersecurity',
         'Network Security',
@@ -121,7 +121,7 @@ const portfolio = {
     },
   ],
 
-  /* ── Experience (Neeraj Rajeev inspired) ────────────────── */
+  /* ── Experience  ────────────────── */
   experience: [
     {
       role: 'Community Lead',
